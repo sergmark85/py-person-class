@@ -25,6 +25,3 @@ def create_person_list(people_l: list) -> list:
             setattr(person_name, spouse_k, Person.people[spouse_name])
 
     return person_instances
-
-
-    pass
