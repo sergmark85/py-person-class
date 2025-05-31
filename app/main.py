@@ -9,9 +9,11 @@ class Person:
 
 def create_person_list(people_l: list) -> list:
     person_instances = []
+
     for person in people_l:
         person_n = Person(person["name"], person["age"])
         person_instances.append(person_n)
+
     for person in people_l:
         person_name = Person.people[person["name"]]
         if "wife" in person:
